@@ -31,11 +31,11 @@ libclassrec.a: $(OBJECTS_REC)
 
 # Build the dynamic library with recursive code function
 libclassrec.so: $(OBJECTS_REC)
-	$(CC) -shared -o $@ $(OBJECTS_REC)
+	$(CC) -shared -o $@ $(OBJECTS_REC) -fPIC
 
 # Build the dynamic library with loop code function
 libclassloops.so: $(OBJECTS_LOOP)
-	$(CC) -shared -o $@ $(OBJECTS_LOOP)
+	$(CC) -shared -o $@ $(OBJECTS_LOOP) -fPIC
 
 # Build the main program linked with the static library recursive
 mains: main.o libclassrec.a
