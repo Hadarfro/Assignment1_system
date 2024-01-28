@@ -13,7 +13,7 @@ int main(){
 
     scanf("%d %d", &num1 , &num2);
 
-printf("the Armstrong numbers are:");
+printf("The Armstrong numbers are:");
      for (int i = num1; i <= num2; ++i) {
         if (isArmstrong(i)) {
             printf(" %d", i);
@@ -22,7 +22,7 @@ printf("the Armstrong numbers are:");
     printf("\n");
 
 //palindrome numbers between num1 and num2
-    printf("the Palindrome is:");
+    printf("The Palindromes are:");
     for (int i = num1; i <= num2; ++i) {
         if (isPalindrome(i)) {
             printf(" %d", i);
@@ -31,7 +31,7 @@ printf("the Armstrong numbers are:");
     printf("\n");
 
     // Prime numbers between num1 and num2
-    printf("the prime numbers are:");
+    printf("The Prime numbers are:");
 
     for (int i = num1; i <= num2; ++i) {
         if (isPrime(i)) {
@@ -41,7 +41,7 @@ printf("the Armstrong numbers are:");
     printf("\n");
 
     // Strong numbers between num1 and num2
-    printf("the strong numbers are:");
+    printf("The Strong numbers are:");
     for (int i = num1; i <= num2; ++i) {
         if (isStrong(i)) {
             printf(" %d", i);
