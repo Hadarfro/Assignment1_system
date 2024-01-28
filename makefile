@@ -9,6 +9,10 @@ OBJECTS_REC = $(SRCS_REC:.c=.o)
 
 all: libclassloops.a libclassrec.a libclassrec.so libclassloops.so mains maindloop maindrec
 
+loops:libclassloops.a
+recursives:libclassrec.a 
+recursived:libclassrec.so 
+loopd:libclassloops.so
 
 main.o: main.c NumClass.h
 	$(CC) $(CFLAGS) -c main.c
